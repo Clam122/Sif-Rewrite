@@ -15,7 +15,7 @@ class ModEmbed {
 
   Mute(offender, moderator, reason) {
     let MuteEmbed = new MessageEmbed()
-      .setTitle(` ${offender} has been muted.`)
+      .setTitle(` **${offender.user.username}** has been muted.`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>\n\n**Reason:** ${reason}`)
       .setColor(this.colors.orange);
     return MuteEmbed;
@@ -23,7 +23,7 @@ class ModEmbed {
 
   Unmute(offender, moderator) {
     let UnmuteEmbed = new MessageEmbed()
-      .setTitle(`${offender} has been unmuted`)
+      .setTitle(` **${offender.user.username}** has been unmuted`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>`)
       .setColor(this.colors.green);
     return UnmuteEmbed;
@@ -31,7 +31,7 @@ class ModEmbed {
 
   Warn(offender, moderator, reason) {
     let WarnEmbed = new MessageEmbed()
-      .setTitle(`${offender} has been warned`)
+      .setTitle(` **${offender.user.username}** has been warned`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>\n\n**Reason:** ${reason}`)
       .setColor(this.colors.yellow);
     return WarnEmbed;
@@ -39,7 +39,7 @@ class ModEmbed {
 
   Ban(offender, moderator, reason) {
     let BanEmbed = new MessageEmbed()
-      .setTitle(`${offender} has been banned`)
+      .setTitle(` **${offender.user.username}** has been banned`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>\n\n**Reason:** ${reason}`)
       .setColor(this.colors.red);
     return BanEmbed;
@@ -47,7 +47,7 @@ class ModEmbed {
 
   Kick(offender, moderator, reason) {
     let KickEmbed = new MessageEmbed()
-      .setTitle(`${offender} has been kicked`)
+      .setTitle(` **${offender.user.username}** has been kicked`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>\n\n**Reason:** ${reason}`)
       .setColor(this.colors.red);
     return KickEmbed;
