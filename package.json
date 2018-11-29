@@ -1,0 +1,23 @@
+{
+  "name": "sifRewrite",
+  "version": "1.0.0",
+  "description": "A simple open source all in one discord bot",
+  "main": "app.js",
+  "repository": "https://github.com/Clam122/Sif-Rewrite.git",
+  "author": "Clam <dfunking@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "better-sqlite-pool": "github:eslachance/better-sqlite-pool",
+    "chalk": "^2.4.1",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.3.2",
+    "klaw": "^2.1.1",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
