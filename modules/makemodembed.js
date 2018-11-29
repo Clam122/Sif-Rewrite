@@ -15,7 +15,7 @@ class ModEmbed {
 
   Mute(offender, moderator, reason) {
     let MuteEmbed = new MessageEmbed()
-      .setTitle(`<@${offender.user.id}> has been muted.`)
+      .setTitle(` ${offender} has been muted.`)
       .setDescription(`**Moderator:** <@${moderator.user.id}>\n\n**Reason:** ${reason}`)
       .setColor(this.colors.orange);
     return MuteEmbed;
