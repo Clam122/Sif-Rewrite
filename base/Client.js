@@ -12,7 +12,7 @@ class Sif extends Client {
     //Config and logger.
     this.config = require("../config.js");
     this.logger = require("../modules/logger.js");
-
+    this.modEmbeds = new (require("./../modules/makemodembed.js"));
     //Commands and aliases.
     this.commands = new Collection();
     this.aliases = new Collection();
