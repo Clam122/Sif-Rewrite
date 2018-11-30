@@ -19,3 +19,5 @@ class Mute extends Command {
     console.log(member);
   }
 }
+
+module.exports = Mute;
