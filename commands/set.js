@@ -90,6 +90,11 @@ class SetCMD extends Command {
       });
       await message.channel.send(`= Current Guild Settings =\n${array.join("\n")}`, {code: "asciidoc"});
     }
+
+    if(action === "resetAll") {
+      this.client.settings.set(message.guild.id, this.client.config.defaultSettings);
+      return message.channel.send("Done!");
+    }
   }
 }
 
