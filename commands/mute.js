@@ -3,7 +3,7 @@ const Command  = require("./../base/Command");
 class Mute extends Command {
   constructor(client) {
     super(client, {
-      name: "Mute",
+      name: "mute",
       description: "Mute a member",
       usage: "mute @Member [time]",
       category: "Moderation",
