@@ -15,7 +15,10 @@ class Mute extends Command {
 
   async run(message, args){
     let member = message.mentions.members.first();
-    if(!member) member = await this.client.awaitReply(message, "What member would you like to mute?", 30000).mentions.users.first();
+    if(!member) {
+      let collectedMessage = await this.client.awaitReply(message, "What member would you like to mute?", 30000)
+      member = collectedMessage.mentions.members.first();
+    }
     console.log(member);
   }
 }
