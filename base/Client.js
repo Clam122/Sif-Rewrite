@@ -116,7 +116,7 @@ class Sif extends Client {
     await msg.channel.send(question);
     try {
       const collected = await msg.channel.awaitMessages(filter, { max: 1, time: limit, errors: ["time"] });
-      return collected.first().content;
+      return collected.first();
     } catch (e) {
       return false;
     }
